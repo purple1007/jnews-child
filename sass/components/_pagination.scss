@@ -1,0 +1,26 @@
+@charset 'utf-8';
+.jeg_navigation.jeg_pagenav_1{
+	margin-top: 1em;
+	 .page_nav,
+	 .page_number{
+ 	    color: $color-dark;
+	    border: none;
+	    min-width: 30px;
+	    line-height: 30px;
+	    font-size: 14px;
+	    font-weight: 300;
+	    &:hover{
+	    	background:$color-lighter;
+	    }
+	    &.active{
+	    	font-weight: 500;
+	    	color:$color-primary;
+	    	background:transparent;
+	    	pointer-events:none;
+	    	&:hover{background:transparent;}
+	    }
+	 }
+}
+.jeg_block_loadmore{
+  a{font-size: 16px;}
+}

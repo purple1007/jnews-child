@@ -1,0 +1,72 @@
+@charset 'utf-8';
+/* ---------BLOCK------------ */
+	// .w1200{max-width: 1200px;}
+	// .w1440{max-width: 1440px;}
+
+	// .col100{width: 100%; }
+	// .col90{width: 90%; }
+	// .col80{width: 80%; }
+	// .col75{width: 75%; }
+	// .col70{width: 70%; }
+	// .col66{width: 66.6666%; }
+	// .col60{width: 60%; }
+	// .col55{width: 55%; }
+	// .col50{width: 50%; }
+	// .col45{width: 45%; }
+	// .col40{width: 40%; }
+	// .col30{width: 30%; }
+	// .col33{width: 33.3333%; }
+	// .col25{width: 25%; }
+	// .col20{width: 20%; }
+	// .col15{width: 15%; }
+	// .col05{width: 05%; }
+
+	.ib-top{display:inline-block;vertical-align: top;}
+	.ib-bottom{display:inline-block;vertical-align: bottom;}
+
+	.flex-wrap{display: flex;flex-wrap:wrap;}
+	.flex-nowrap{display: flex;flex-wrap:nowrap;}
+	.align-items-center{align-items:center;}
+	.align-items-start{align-items:flex-start;}
+	.align-items-end{align-items:flex-end;}
+	.justify-content-center{justify-content:center;}
+	.justify-content-start{justify-content:flex-start;}
+	.justify-content-end{justify-content:flex-end;}
+	.justify-content-between{justify-content:space-between;}
+	.justify-content-around{justify-content:space-around;}
+
+	hr{
+		border: 0;
+		height: 0;
+		border-top: 1px solid rgba(0, 0, 0, 0.25);
+		margin:1em 0;
+		&.no-top{margin-top: 0; }
+		&.no-bottom{margin-bottom: 0; }
+		&.no{margin: 0; }
+	}
+
+	.d-none{display: none;}
+/* -------------RWD--------------- */
+	// @media screen and (max-width: 1023px){
+	// 	.d-1023-block{display: block;}
+	// 	.d-1023-none{display: none;}
+	// 	.w1000,
+	// 	.w1200,
+	// 	.w1300{width: 90%; }
+	// }
+	// @media screen and (max-width: 1024px){
+	// 	.d-1024-block{display: block;}
+	// 	.d-1024-none{display: none;}
+	// }
+	// @media screen and (max-width: 768px){
+	// 	.d-768-block{display: block;}
+	// 	.d-768-none{display: none;}
+	// }
+	// @media screen and (max-width: 620px){
+	// 	.d-620-block{display: block;}
+	// 	.d-620-none{display: none;}
+	// }
+	// @media screen and (max-width: 480px){
+	// 	.d-480-block{display: block;}
+	// 	.d-480-none{display: none;}
+	// }

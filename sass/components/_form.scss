@@ -1,0 +1,142 @@
+@charset 'utf-8';
+/* ---------FORM-------------------- */
+	label,
+	.form_title{
+		font-weight: 400;
+		font-family: $font-title;
+	}
+	.form_title{
+		display: inline-block;
+		padding-right: 15px;
+	}
+	.form_list > li{
+		padding-bottom: 15px;
+	}
+	input[type=text],
+	input[type=email],
+	input[type=password],
+	input[type=search],
+	input[type=date],
+	select,
+	textarea{
+		width: 100%;
+		font-size: 1em;
+		font-weight: 500;
+		letter-spacing: 1px;
+		padding: 10px 15px;
+		margin:5px 0;
+		border:none;
+		-webkit-border-radius: 0px;
+		background-color: #eee;
+	}
+	input[type=text]:focus,
+	input[type=email]:focus,
+	input[type=password]:focus,
+	input[type=search]:focus,
+	input[type=date]:focus{
+		background: #e5e5e5;
+	}
+	textarea{
+		min-width: 100%;
+		max-width: 100%;
+	}
+	input:-webkit-autofill {-webkit-box-shadow: 0 0 0 30px white inset; }
+/* ----------placeholder------------ */
+	::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+		font-weight: 300;
+		color: #cccccc;
+	}
+	:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+		font-weight: 300;
+		color: #cccccc;
+		opacity:  1;
+	}
+	::-moz-placeholder { /* Mozilla Firefox 19+ */
+		font-weight: 300;
+		color:	#cccccc;
+		opacity:  1;
+	}
+	:-ms-input-placeholder { /* Internet Explorer 10-11 */
+		font-weight: 300;
+		color:	#cccccc;
+	}
+	::-ms-input-placeholder { /* Microsoft Edge */
+		font-weight: 300;
+		color: #cccccc;
+	}
+/* ----------INPUT[select]---------- */
+/* ----------INPUT[search]---------- */
+	.search{
+		position: relative;
+	}
+	input[type=search]{
+		-webkit-appearance:textfield;
+	}
+	::-webkit-search-decoration,
+	::-webkit-search-cancel-button{display:none; }
+/* ----------INPUT[radio+checkbox]-- */
+	input[type=radio   ]:not(old),
+	input[type=checkbox]:not(old){
+		width     : 0;
+		margin    : 0;
+		font-size : 0;
+		opacity   : 0;
+		pointer-events: none;
+        display: none;
+	}
+	input[type=radio   ]:not(old) + label,
+	input[type=checkbox]:not(old) + label{
+		position: relative;
+		display      : block;
+		line-height  : 24px;
+		margin-right : 17px;
+		cursor       : pointer;
+		letter-spacing: 0;
+	}
+	input[type=radio   ]:not(old) + label,
+	input[type=checkbox]:not(old) + label{
+		display: inline-block;
+		padding: 0 5px 0 22px;
+	}
+	input[type=radio   ]:not(old) + label:before{
+		content: "";
+		position: absolute;
+		width: 14px;
+		height: 14px;
+		border-radius: 100%;
+		border: 2px solid $color-grey;
+		left: 0;
+		top: .125em;
+	}
+	input[type=radio   ]:not(old):checked + label:after{
+		content: "";
+		position: absolute;
+		width: 10px;
+		height: 10px;
+		background-color: $color-primary;
+		border-radius: 100%;
+		left: 4px;
+		top: .375em;
+	}
+	input[type=checkbox   ]:not(old) + label:before{
+		content: "";
+		position: absolute;
+		width: 14px;
+		height: 14px;
+		border: 2px solid $color-grey;
+		left: 0;
+		top: .125em;
+	}
+	input[type=checkbox   ]:not(old):checked + label:after{
+		content: "";
+		position: absolute;
+		width: 10px;
+		height: 10px;
+		background-color: $color-primary;
+		left: 4px;
+		top: .375em;
+	}
+@media screen and (max-width: 768px){
+}
+@media screen and (max-width: 620px){
+}

@@ -1,0 +1,107 @@
+@charset 'utf-8';
+.jeg_userlist.style-2{ // author list
+  .jeg_userlist-wrap{
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    border:none;
+    box-shadow: none;
+  }
+  .jeg_userlist-photo{
+    flex:none;
+    width: 20%;
+    min-width: 80px;
+    margin-right: 0;
+  }
+  img.photo{
+    width: 100%;
+    height: auto;
+    max-width: none;
+  }
+  .jeg_userlist-name{
+    width: 80%;
+    max-width: calc(100% - 80px);
+    padding-left: 15px;
+    letter-spacing: .018em;
+  }
+}
+.jeg_authorbox{ // authorbox in single post
+  display: flex;
+  flex-wrap:wrap;
+  align-items:center;
+  border-left: none;
+  border-right: none;
+  margin-bottom: 0;
+  .jeg_author_image{
+    img{
+      width: 100px;
+      height: 100px;
+    }
+  }
+  h3.jeg_author_name{
+    letter-spacing: .018em;
+    a{
+      color: $color-black;
+      &:hover{color:$color-primary;}
+    }
+  }
+  .jeg_author_socials{
+    a{
+      line-height: 1;
+      margin:.25em .75em .5em 0;
+    }
+  }
+  .jeg_author_content{
+    max-width: calc(100% - 150px);
+    margin-left: 0;
+    p{
+      line-height: 1.5;
+      margin-bottom: 0;
+    }
+  }
+}
+.jeg_archive_header.jeg_authorpage{ // author page
+  @extend .jeg_authorbox;
+  display: block;
+  .jeg_author_wrap{
+    padding-bottom: 60px;
+    background: none;
+    border-bottom: 1px solid $color-lighter;
+  }
+  .jeg_author_image{
+    img{
+      width: 120px;
+      height: 120px;
+    }
+  }
+  .jeg_author_content{
+    max-width: calc(50% - 120px);
+    margin:0 0 0 1.5em;
+    text-align: left;
+  }
+  .jeg_author_desc{
+    text-align: left;
+    p{margin-bottom: 0;}
+  }
+}
+@media screen and (max-width: 1024px) {
+  .jeg_archive_header.jeg_authorpage{ // author page
+    .jeg_author_wrap{padding-bottom: 30px; }
+    .jeg_author_content{max-width: calc(100% - 120px); }
+  }
+}
+@media screen and (max-width: 768px) {
+  .jeg_authorbox{ // authorbox in single post
+    .jeg_author_image{margin:0 auto .5em;}
+    .jeg_author_content{
+      width: 100%;
+      max-width: none;
+      padding:0;
+      margin-left: 0;
+      text-align: center;
+    }
+    .jeg_author_desc{
+      text-align: center;
+    }
+  }
+}

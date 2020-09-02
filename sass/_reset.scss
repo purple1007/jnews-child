@@ -1,0 +1,185 @@
+@charset 'utf-8';
+/* -----RESET---------------- */
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+	pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q,
+	s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+	fieldset, form, label, input, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup,
+	menu, nav, output, ruby, section, summary, time, mark, audio, video{
+		margin: 0;
+		padding: 0;
+		border: 0;
+		outline:none;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
+	}
+	article, aside, details, figcaption, figure, footer,
+	header, hgroup, menu, nav, section{
+		display: block;
+	}
+
+	body{line-height: 1; }
+
+	ol, ul{list-style: none; }
+
+	blockquote, q{quotes: none; }
+
+	blockquote:before, blockquote:after, q:before, q:after{
+		content: '';
+		content: none;
+	}
+	table{
+		width: 100%;
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+
+	img{
+		display: block;
+		border:none;
+		width: auto;
+		height: auto;
+		max-width: 100%;
+		max-height: 100%;
+	}
+	input::-moz-focus-inner,
+	button::-moz-focus-inner,
+	select::-moz-focus-inner{
+		border:0;
+		outline:0;
+	}
+	select:-moz-focusring {
+		color: transparent;
+		text-shadow: 0 0 0 #000;
+	}
+	input[type="search"],
+	input[type="search"]:hover,
+	input[type="search"]:focus,
+	input[type="search"]:active{-webkit-appearance:none; }
+	select::-ms-expand {display: none; }
+	button,
+	input[type="submit"],
+	input[type="reset"]{
+		background: none;
+		cursor:pointer;
+		appearance:none;
+		-webkit-appearance:none;
+	}
+	option{background-color: transparent; }
+	code{
+		display: block;
+		background: $bg-grey;
+		padding:10px;
+		border-left: 3px solid $color-primary;
+	}
+	a{
+		outline: none !important;
+		color: $color-text;
+		&:focus{color:inherit;}
+	}
+
+
+	#btn-form-submit-modal:focus,
+	#btn-form-submit-modal:hover,
+	.Back-in-stock-addItem-block .btn.focus:not(.is-active),
+	.Back-in-stock-addItem-block .btn:not(.is-active):focus,
+	.Back-in-stock-addItem-block .btn:not(.is-active):hover,
+	.Label-price.is-sale,
+	.MemberCenter .PromotionInfo .show-term-button:hover,
+	.ProductDetail-product-info .price-box>.price:not(.price-crossed),
+	.ProductDetail-product-info>.box-default .out-of-stock *,
+	.ProductList-categoryMenu .List-item a.primary-color-hover:hover,
+	.ProductList-categoryMenu ul li:hover>a.primary-color-hover,
+	.ProductReview-container .List-item a.primary-color-hover:hover,
+	.ProductReview-container a.primary-color-hover:hover,
+	.PromotionInfo .show-term-button:hover,
+	.PromotionPage-container .info-box .btn-add-to-promotion-cart .fa,
+	.addon-product-info .out-of-stock,
+	.addon-promotions-container .addon-promotion-item .price-sale,
+	.btn-add-back-in-stock.is-active,
+	.btn-add-back-in-stock:hover,
+	.btn-add-to-cart.mobile-cart,
+	.btn-add-wishlist.is-active,
+	.btn-add-wishlist:hover,
+	.btn.focus:not(.btn-success),
+	.btn:not(.btn-success):focus,
+	.btn:not(.btn-success):hover,
+	.modal.QuickCart-modal .out-of-stock *,
+	.product-info .price-regular:not(.price-crossed),
+	.product-info .price-sale,
+	.product-item .price-sale,
+	.product-item .price:not(.price-crossed),
+	.quick-cart-body .product-link>a,
+	.quick-cart-mobile-header .product-link>a,
+	.variation-label.variation-label--selected,
+	.variation-label:hover{
+		color:$color-text;
+	}
+	.MemberCenter .product-review-block .btn-primary,
+	.MemberCenter .product-review-block .btn-primary:hover,
+	.btn-color-primary,
+	.btn-color-primary:hover,
+	.cart-chkt-btn,
+	.member-profile-save,
+	.member-profile-save:hover,
+	.sl-goto-top:hover,
+	.variant-image.selected .image-container,
+	.variation-label.variation-label--selected,
+	.variation-label:hover{
+		border-color:$color-text;
+	}
+	.CartPanel-toggleButton .Cart-count.primary-color,
+	.MemberCenter .product-review-block .btn-primary,
+	.btn-color-primary,
+	.member-profile-save,
+	.NavigationBar-nestedList .sub-next:not(.sub-disable):hover span,
+	.NavigationBar-nestedList .sub-prev:not(.sub-disable):hover span,
+	.ProductList-select ul li:hover,
+	.cart-chkt-btn,
+	.navigation-menu .scroll-left:not(.scroll-disable):hover,
+	.navigation-menu .scroll-right:not(.scroll-disable):hover,
+	.owl-theme .owl-dots .owl-dot.active span,
+	.owl-theme .owl-dots .owl-dot:hover span,
+	.product-item .boxify-image-wrapper .btn-add-to-cart:hover,
+	.sl-goto-top:hover{
+		background:$color-text;
+		color:white;
+	}
+	.btn:not(.btn-success).focus,
+	.btn:not(.btn-success):focus,
+	.btn:not(.btn-success):hover{
+		background:$color-primary;
+		border-color: $color-primary;
+	}
+	.Grid-item-content div:last-child:after,
+	.Grid-item-content p:last-child:after,
+	.Tabset .Tab-label.active span:after,
+	.pagination>li.active a:focus,
+	.pagination>li.active a:hover,
+	.pagination>li.active span:focus,
+	.pagination>li.active span:hover,
+	.pagination>li.active>a,
+	.pagination>li.active>span,
+	.primary-border-color-after:not(.Grid-item-title) :after,
+	.primary-border-color-after:not(.Grid-item-title):after,
+	.primary-border-color-after>:after,
+	.primary-color-border-bottom,
+	.section-title:after{
+		border-bottom-color:$color-text;
+	}
+	.has-error .help-block,
+	.has-error .control-label,
+	.has-error .radio,
+	.has-error .checkbox,
+	.has-error .radio-inline,
+	.has-error .checkbox-inline,
+	.has-error.radio label,
+	.has-error.checkbox label,
+	.has-error.radio-inline label,
+	.has-error.checkbox-inline label{
+		color:$color-alert;
+	}

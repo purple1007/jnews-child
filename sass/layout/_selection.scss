@@ -1,0 +1,13 @@
+@charset 'utf-8';
+::-moz-selection {
+	background: $color-primary-light;
+	color: $color-text;
+}
+::-webkit-selection {
+	background: $color-primary-light;
+	color: $color-text;
+}
+::selection {
+	background: $color-primary-light;
+	color: $color-text;
+}

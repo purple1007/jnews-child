@@ -1,0 +1,38 @@
+/*!
+Theme Name:   JNews-child
+Description:  The Child Theme of JNews
+Author:       Judy Shyu
+Template:     jnews
+Version:      1.0.0
+Tags:         custom
+*/
+
+@import 'helpers/_variable';
+@import 'helpers/_mixin';
+
+// @import '_reset';
+
+@import 'components/_font';
+@import 'components/_breadcrumb';
+@import 'components/_btn';
+@import 'components/_pagination';
+@import 'components/_post';
+@import 'components/_single_post';
+@import 'components/_author';
+
+@import 'layout/_grid';
+@import 'layout/_selection';
+
+
+@import 'pages/_index';
+@import 'pages/_category';
+
+@import 'layout/_header';
+@import 'layout/_sidebar';
+@import 'layout/_footer';
+
+
+// @import 'components/_animation';
+// @import 'components/_bg';
+// @import 'components/_breadcrumb';
+// @import 'components/_form';

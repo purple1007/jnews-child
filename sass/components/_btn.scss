@@ -1,0 +1,22 @@
+@charset 'utf-8';
+.btn,
+.button,
+input[type=submit]{
+  outline:none;
+	&:hover{
+		color:$color-dark;
+		background:$color-primary-light;
+		box-shadow: none !important;
+	}
+}
+.btn{
+  &.btn-primary{
+    color: white;
+    line-height: 40px;
+    &:hover{
+      color: $color-dark;
+    }
+  }
+}
+@media screen and (max-width: 620px){
+}

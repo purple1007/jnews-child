@@ -1,0 +1,34 @@
+@charset 'utf-8';
+.jeg_stickybar{
+	.jeg_logo{
+		img{width: 100px;}
+	}
+}
+.jeg_header{
+	.jeg_navbar{border-bottom: none;}
+	.jeg_bottombar{
+		.jeg_nav_center{border-bottom: 1px solid $color-lighter; }
+	}
+	.jeg_main_menu{
+		> li{
+			> a{
+				font-size: 16px;
+				font-weight: 500;
+			}
+		}
+	}
+	.jeg_button_1{
+		.btn{
+			font-size: 14px;
+			font-weight: 500;
+			outline: none;
+			&:hover{background:$color-primary;}
+		}
+	}
+}
+@media (min-width:767px){
+}
+@media (min-width:992px){
+}
+@media (min-width:1200px){
+}

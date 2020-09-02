@@ -1,0 +1,30 @@
+@charset 'utf-8';
+/* ---------ICON-SIZE-------------- */
+	.icon-xs{
+		width: 24px;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.icon-s{
+		width: 30px;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.icon-m{
+		width: 36px;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.icon-l{
+		width: 42px;
+		display: inline-block;
+		vertical-align: middle;
+	}
+/* ---------ICON-STYLE-------------- */
+/*----rwd--------------*/
+	@media screen and (max-width: 768px){
+		.icon-xs{width: 22px; }
+		.icon-s{width: 28px; }
+		.icon-m{width: 34px; }
+		.icon-l{width: 40px; }
+	}

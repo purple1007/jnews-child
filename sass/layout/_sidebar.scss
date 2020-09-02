@@ -1,0 +1,33 @@
+@charset 'utf-8';
+.jeg_sidebar{
+	.widget{
+		border-bottom: 1px solid $color-lighter;
+		&:last-child{border-bottom: none; }
+	}
+	.jeg_block_heading_6{
+		border-bottom: none;
+		&:after{
+			width: 4.875em;
+		}
+		.jeg_block_title{
+			font-size: 16px;
+			font-weight: 600;
+			letter-spacing: .04em;
+			i,
+			span{
+				height: 30px;
+				line-height: 30px;
+			}
+		}
+	}
+	.jeg_pl_xs{
+    margin-bottom: 1em;
+    .jeg_post_title{font-size: 16px;}
+  }
+}
+@media (min-width:767px){
+}
+@media (min-width:992px){
+}
+@media (min-width:1200px){
+}

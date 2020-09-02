@@ -1,0 +1,133 @@
+@charset 'utf-8';
+.jeg_meta_container,
+.jeg_post_tags{margin: .5em 0;}
+.jeg_share_button{
+  margin-bottom: 0 !important;
+  a{
+    max-width: 38px;
+    padding:0 6px;
+    border-radius: 100%;
+    position: relative;
+    overflow: hidden;
+    &.expanded{
+      width: 38px;
+      max-width: 38px;
+      padding:0 6px;
+      >span{display: none;}
+    }
+  }
+  .jeg_btn-hatena,
+  .jeg_btn-line{
+    .fa{width:1em;}
+  }
+  .jeg_btn-line{
+    .fa{background-size: contain;}
+  }
+  &.share-bottom{
+    margin: 0;
+  }
+}
+.jeg_share_top_container,
+.jeg_share_bottom_container{margin-left: auto;}
+.jeg_post_meta.jeg_post_meta_1{
+  .meta_text{display: none;}
+  a{font-weight: normal;}
+  .jeg_meta_category{
+    background: $color-primary;
+    color: white;
+    font-weight: 300;
+    padding:.25em 1em;
+  }
+}
+.jeg_singlepage{
+  .entry-header{
+    .jeg_post_title{
+      font-size: 2.5em;
+      letter-spacing: .06em;
+    }
+  }
+}
+.single-post{
+  .entry-content{
+    .content-inner{
+      *{letter-spacing: .06em; }
+      h2{font-size: 2.25em;}
+      h2,
+      h3,
+      h4,
+      h5,
+      h6{
+        color: $color-primary-dark;
+      }
+      p{
+        font-size: 1em;
+        code{
+          font-size: 1em;
+          line-height: inherit;;
+          background: $color-lighter;
+          border-radius: 3px;
+          display: inline;
+        }
+      }
+      a{color: $color-primary-dark;}
+      pre{padding: .5em 1em; }
+      li{color: $color-dark;}
+      figcaption{font-size: 14px;}
+    }
+  }
+}
+.jnews_prev_next_container{
+  .jeg_prevnext_post{
+    border-top: none;
+    a{
+      &:first-child{
+        position: relative;
+        &:after{
+          content:'';
+          display: block;
+          width: 1px;
+          height: 100%;
+          background: $color-lighter;
+          position: absolute;
+          top: 0;
+          right: 20px;
+        }
+      }
+      &:hover{
+        span{opacity: 1;}
+        h3{color:$color-black;}
+      }
+    }
+    span{
+      color: $color-primary;
+      opacity: .75;
+    }
+    h3{
+      border-left: none;
+      padding-left: 0;
+      color: $color-dark;
+    }
+  }
+}
+@media only screen and (max-width: 480px){
+  .jeg_share_button{
+    a{width: 32px !important; }
+  }
+  .jnews_prev_next_container{
+    .jeg_prevnext_post{
+      a{
+        &:first-child{
+          &:after{
+            width: 2px;
+            height: 14px;
+            top: auto;
+            bottom: -20px;
+            left: 0;
+            right: 0;
+            margin:0 auto;
+          }
+        }
+      }
+    }
+  }
+}
