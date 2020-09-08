@@ -73,9 +73,10 @@
       .has-large-font-size{font-size: 1.25em;}
       a{
         color: $color-primary-dark;
-        &:not(.wp-block-button__link),
-        &:not(.page_number){
-          text-decoration: underline;
+        text-decoration: underline;
+        &.wp-block-button__link,
+        &.page_number{
+          text-decoration: none;
         }
       }
       code,
