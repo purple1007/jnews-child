@@ -7,6 +7,7 @@
     max-width: 38px;
     padding:0 6px;
     border-radius: 100%;
+    text-decoration: none !important;
     position: relative;
     overflow: hidden;
     &.expanded{
@@ -57,7 +58,7 @@
       h4,
       h5,
       h6{
-        color: $color-primary-dark;
+        color: $color-title;
       }
       p{
         font-size: 1em;
@@ -69,7 +70,21 @@
           display: inline;
         }
       }
-      a{color: $color-primary-dark;}
+      .has-large-font-size{font-size: 1.25em;}
+      a{
+        color: $color-primary-dark;
+        &:not(.wp-block-button__link),
+        &:not(.page_number){
+          text-decoration: underline;
+        }
+      }
+      code,
+      kbd,
+      pre,
+      samp,
+      .enlighter-default{
+        font-family: $font-monospace;
+      }
       pre{padding: .5em 1em; }
       li{color: $color-dark;}
       figcaption{font-size: 14px;}
@@ -107,6 +122,13 @@
       padding-left: 0;
       color: $color-dark;
     }
+  }
+}
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+  .jeg_share_button a.expanded {
+      width: 32px;
+      height: 32px;
+      line-height: 32px;
   }
 }
 @media only screen and (max-width: 480px){

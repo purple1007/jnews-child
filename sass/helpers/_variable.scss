@@ -3,6 +3,7 @@
   $color-light: #aaa;
   $color-grey: #D0D0D0;
   $color-dark: #888888;
+  $color-title: #555555;
   $color-black: #222222;
   $color-text: $color-black;
   $color-primary: #e9c7c4;
@@ -11,4 +12,5 @@
 
 // FONT
 $font-title: "Noto Sans TC", Helvetica, Arial, sans-serif;
+$font-monospace: "Source Code Pro","Liberation Mono","Courier New",Courier, "Noto Sans TC", monospace;
 $font-content: $font-title;
