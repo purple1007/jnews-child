@@ -1,8 +1,11 @@
 @charset 'utf-8';
-.jeg_sidebar{
+.jeg_sidebar,
+.vc_col-sm-4{
 	.widget{
 		border-bottom: 1px solid $color-lighter;
-		&:last-child{border-bottom: none; }
+		&:last-child,
+    &.no-border,
+    &.widget_jnews_module_element_header{border-bottom: none; }
 	}
 	.jeg_block_heading_6{
 		border-bottom: none;
@@ -24,10 +27,4 @@
     margin-bottom: 1em;
     .jeg_post_title{font-size: 16px;}
   }
-}
-@media (min-width:767px){
-}
-@media (min-width:992px){
-}
-@media (min-width:1200px){
 }

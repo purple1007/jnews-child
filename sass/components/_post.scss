@@ -49,7 +49,8 @@
 	.jeg_post_excerpt{
     font-size: 16px;
     line-height: 1.5;
-		color: $color-dark;
+		color: $color-black;
+    p{color: $color-black;}
 	}
 }
 @media (max-width: 1024px){

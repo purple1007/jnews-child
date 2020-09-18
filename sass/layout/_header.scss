@@ -25,6 +25,11 @@
 			&:hover{background:$color-primary;}
 		}
 	}
+  .jeg_search_wrapper.search_icon{
+    .jeg_search_toggle{
+      padding:0 1em;
+    }
+  }
 }
 @media (min-width:767px){
 }

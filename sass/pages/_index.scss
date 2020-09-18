@@ -39,6 +39,7 @@
 		.jeg_thumb{
 			width: 50%;
 			margin-left: 1em;
+      a>div:before{display: none;}
 		}
 		.jeg_postblock_content{
 			padding-bottom: 0;
@@ -145,6 +146,7 @@
 				width: 100%;
 				margin:0;
 				margin-top: .5em;
+        a>div:before{display: block;}
 			}
 			.jeg_postblock_content{
 				left: 0;
@@ -177,6 +179,4 @@
 		}
 	}
 
-}
-@media (max-width:320px){
 }
