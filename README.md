@@ -1,8 +1,3 @@
----
-title: apo design README
-tags: apo design, README
-description: apo design WordPress backend and file README file
----
 # apo design README
 
 ## WP Pusher說明
