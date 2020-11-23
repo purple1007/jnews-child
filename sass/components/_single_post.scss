@@ -63,13 +63,13 @@
       p{
         font-size: 1em;
         color: $color-black;
-        code{
-          font-size: 1em;
-          line-height: inherit;;
-          background: $color-lighter;
-          border-radius: 3px;
-          display: inline;
-        }
+      }
+      code{
+        font-size: .9em;
+        line-height: inherit;;
+        background: $color-lighter;
+        border-radius: 3px;
+        display: inline;
       }
       .has-large-font-size{font-size: 1.25em;}
       a{
@@ -84,11 +84,10 @@
       kbd,
       pre,
       samp,
-      .enlighter-default{
-        font-family: $font-monospace;
-      }
+      .enlighter-default{font-family: $font-monospace; }
+      div.enlighter>div>div::before{display: none;}
       pre{padding: .5em 1em; }
-      li{color: $color-dark;}
+      li{color: $color-black;}
       figcaption{font-size: 14px;}
     }
   }
