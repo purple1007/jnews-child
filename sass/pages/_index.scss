@@ -74,7 +74,10 @@
 	}
 }
 .custom-index-category{
-	.jeg_thumb{width: 300px; }
+	.jeg_thumb{
+		width: 300px;
+		margin-right: 20px;
+	}
 }
 .widget_tag_cloud,
 .jeg_block_loadmore{
@@ -109,7 +112,10 @@
 }
 @media (max-width:768px){
 	.custom-index-category{
-		.jeg_thumb{width: 200px; }
+		.jeg_thumb{
+			width: 200px;
+			margin-right: 1em;
+		}
 	}
 }
 @media (max-width:767px){
