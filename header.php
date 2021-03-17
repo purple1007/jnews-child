@@ -14,6 +14,7 @@
     <link rel="preload" href="https://apodesign.tw/wp-content/themes/jnews/assets/fonts/jegicon/fonts/jegicon.woff" as="font" type="font/woff" crossorigin>
 </head>
 <body <?php body_class(); ?>>
+    <?php if ( function_exists( 'gtm4wp_the_gtm_tag' ) ) { gtm4wp_the_gtm_tag(); } ?>
 
     <?php do_action('jnews_after_body'); ?>
 
