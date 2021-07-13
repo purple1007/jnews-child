@@ -124,10 +124,13 @@
 	}
 }
 @media only screen and (max-width: 667px){
-	.jeg_heroblock.jeg_heroblock_5{
+	.jeg_heroblock.jeg_heroblock_5:not(.tiny-slider){
 		.jeg_heroblock_wrapper{
 			height: auto;
 			padding-bottom: 0;
+			.jeg_post{
+				height: auto;
+			}
 		}
 		.jeg_block_container{
 			width: 100%;
