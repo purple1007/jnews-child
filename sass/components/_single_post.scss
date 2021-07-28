@@ -89,6 +89,9 @@
       pre{padding: .5em 1em; }
       li{color: $color-black;}
       figcaption{font-size: 14px;}
+      img{
+        @include transform(translateZ(0));
+      }
     }
   }
 }
