@@ -92,6 +92,12 @@ code { font-family: "Consolas", monospace; }
 .jeg_post .jeg_post_excerpt { font-size: 16px; line-height: 1.5; color: #222222; }
 .jeg_post .jeg_post_excerpt p { color: #222222; }
 
+.entry-content .jeg_post_excerpt p, .entry-content .content-inner p { font-size: 1em; color: #222222; }
+.entry-content .content-inner ul, .entry-content .wpb_text_column ul { padding-left: 2.14285714em; list-style-position: inside; list-style: square; margin-bottom: 1.5em; }
+.entry-content .content-inner ul ul, .entry-content .wpb_text_column ul ul { list-style: disc; }
+.entry-content .content-inner ol, .entry-content .wpb_text_column ol { padding-left: 2.14285714em; list-style-position: inside; list-style: decimal; margin-bottom: 1.5em; }
+.entry-content .content-inner ol ol, .entry-content .wpb_text_column ol ol { list-style: lower-alpha; }
+
 @media (max-width: 1024px) { .jeg_post .jeg_thumb { margin-right: 1em; }
   .jeg_post .jeg_post_category a { font-size: 12px; padding: 2px 5px 3px !important; margin: 0 3px 3px 0; }
   .jeg_post .jeg_post_title { display: block; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; } }
@@ -126,6 +132,7 @@ code { font-family: "Consolas", monospace; }
 .single-post .entry-content .content-inner pre { padding: .5em 1em; }
 .single-post .entry-content .content-inner li { color: #222222; }
 .single-post .entry-content .content-inner figcaption { font-size: 14px; }
+.single-post .entry-content .content-inner img { -moz-transform: translateZ(0); -o-transform: translateZ(0); -ms-transform: translateZ(0); -webkit-transform: translateZ(0); transform: translateZ(0); }
 
 .jnews_prev_next_container .jeg_prevnext_post { border-top: none; }
 .jnews_prev_next_container .jeg_prevnext_post a:first-child { position: relative; }
@@ -236,18 +243,19 @@ hr.no { margin: 0; }
   .custom-index-category .jeg_thumb { width: 250px; } }
 @media (max-width: 768px) { .custom-index-category .jeg_thumb { width: 200px; margin-right: 1em; } }
 @media (max-width: 767px) { .custom-index-category .jeg_thumb { width: 40%; } }
-@media only screen and (max-width: 667px) { .jeg_heroblock.jeg_heroblock_5 .jeg_heroblock_wrapper { height: auto; padding-bottom: 0; }
-  .jeg_heroblock.jeg_heroblock_5 .jeg_block_container { width: 100%; height: 100%; position: absolute !important; }
-  .jeg_heroblock.jeg_heroblock_5 .jeg_hero_item_1 { width: 100%; height: 0; padding-bottom: 66.6666% !important; }
-  .jeg_heroblock.jeg_heroblock_5 .jeg_hero_item_1 .jeg_postblock_content .jeg_post_title { font-size: 18px; }
-  .jeg_heroblock.jeg_heroblock_5 .jeg_hero_item_2, .jeg_heroblock.jeg_heroblock_5 .jeg_hero_item_3 { height: 0; padding-bottom: 33.3333% !important; position: relative; left: 0; top: 0; }
-  .jeg_heroblock.jeg_heroblock_5 .jeg_hero_item_2 .jeg_thumb, .jeg_heroblock.jeg_heroblock_5 .jeg_hero_item_3 .jeg_thumb { width: 100%; margin: 0; margin-top: .5em; }
-  .jeg_heroblock.jeg_heroblock_5 .jeg_hero_item_2 .jeg_thumb a > div:before, .jeg_heroblock.jeg_heroblock_5 .jeg_hero_item_3 .jeg_thumb a > div:before { display: block; }
-  .jeg_heroblock.jeg_heroblock_5 .jeg_hero_item_2 .jeg_postblock_content, .jeg_heroblock.jeg_heroblock_5 .jeg_hero_item_3 .jeg_postblock_content { left: 0; padding-bottom: 1em; }
-  .jeg_heroblock.jeg_heroblock_5 .jeg_hero_item_2 .jeg_postblock_content .jeg_post_title, .jeg_heroblock.jeg_heroblock_5 .jeg_hero_item_3 .jeg_postblock_content .jeg_post_title { font-size: 16px; }
-  .jeg_heroblock.jeg_heroblock_5 .jeg_hero_item_2 .jeg_postblock_content .jeg_post_title a, .jeg_heroblock.jeg_heroblock_5 .jeg_hero_item_3 .jeg_postblock_content .jeg_post_title a { color: white; }
-  .jeg_heroblock.jeg_heroblock_5 .jeg_hero_item_2 .jeg_thumb { margin-right: .5em; }
-  .jeg_heroblock.jeg_heroblock_5 .jeg_hero_item_3 .jeg_thumb { margin-left: .5em; } }
+@media only screen and (max-width: 667px) { .jeg_heroblock.jeg_heroblock_5:not(.tiny-slider) .jeg_heroblock_wrapper { height: auto; padding-bottom: 0; }
+  .jeg_heroblock.jeg_heroblock_5:not(.tiny-slider) .jeg_heroblock_wrapper .jeg_post { height: auto; }
+  .jeg_heroblock.jeg_heroblock_5:not(.tiny-slider) .jeg_block_container { width: 100%; height: 100%; position: absolute !important; }
+  .jeg_heroblock.jeg_heroblock_5:not(.tiny-slider) .jeg_hero_item_1 { width: 100%; height: 0; padding-bottom: 66.6666% !important; }
+  .jeg_heroblock.jeg_heroblock_5:not(.tiny-slider) .jeg_hero_item_1 .jeg_postblock_content .jeg_post_title { font-size: 18px; }
+  .jeg_heroblock.jeg_heroblock_5:not(.tiny-slider) .jeg_hero_item_2, .jeg_heroblock.jeg_heroblock_5:not(.tiny-slider) .jeg_hero_item_3 { height: 0; padding-bottom: 33.3333% !important; position: relative; left: 0; top: 0; }
+  .jeg_heroblock.jeg_heroblock_5:not(.tiny-slider) .jeg_hero_item_2 .jeg_thumb, .jeg_heroblock.jeg_heroblock_5:not(.tiny-slider) .jeg_hero_item_3 .jeg_thumb { width: 100%; margin: 0; margin-top: .5em; }
+  .jeg_heroblock.jeg_heroblock_5:not(.tiny-slider) .jeg_hero_item_2 .jeg_thumb a > div:before, .jeg_heroblock.jeg_heroblock_5:not(.tiny-slider) .jeg_hero_item_3 .jeg_thumb a > div:before { display: block; }
+  .jeg_heroblock.jeg_heroblock_5:not(.tiny-slider) .jeg_hero_item_2 .jeg_postblock_content, .jeg_heroblock.jeg_heroblock_5:not(.tiny-slider) .jeg_hero_item_3 .jeg_postblock_content { left: 0; padding-bottom: 1em; }
+  .jeg_heroblock.jeg_heroblock_5:not(.tiny-slider) .jeg_hero_item_2 .jeg_postblock_content .jeg_post_title, .jeg_heroblock.jeg_heroblock_5:not(.tiny-slider) .jeg_hero_item_3 .jeg_postblock_content .jeg_post_title { font-size: 16px; }
+  .jeg_heroblock.jeg_heroblock_5:not(.tiny-slider) .jeg_hero_item_2 .jeg_postblock_content .jeg_post_title a, .jeg_heroblock.jeg_heroblock_5:not(.tiny-slider) .jeg_hero_item_3 .jeg_postblock_content .jeg_post_title a { color: white; }
+  .jeg_heroblock.jeg_heroblock_5:not(.tiny-slider) .jeg_hero_item_2 .jeg_thumb { margin-right: .5em; }
+  .jeg_heroblock.jeg_heroblock_5:not(.tiny-slider) .jeg_hero_item_3 .jeg_thumb { margin-left: .5em; } }
 @media (max-width: 480px) { .jeg_heroblock:not(.owl-carousel).jeg_heroblock_5 .jeg_heroblock_scroller { height: auto; }
   .jeg_heroblock:not(.owl-carousel).jeg_heroblock_5 .jeg_heroblock_scroller .jeg_hero_item_2, .jeg_heroblock:not(.owl-carousel).jeg_heroblock_5 .jeg_heroblock_scroller .jeg_hero_item_3 { width: 80% !important; padding-bottom: 53.3333% !important; }
   .jeg_heroblock:not(.owl-carousel).jeg_heroblock_5 .jeg_heroblock_scroller .jeg_hero_item_2 .jeg_thumb, .jeg_heroblock:not(.owl-carousel).jeg_heroblock_5 .jeg_heroblock_scroller .jeg_hero_item_3 .jeg_thumb { margin: .5em; }

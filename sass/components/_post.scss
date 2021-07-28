@@ -47,10 +47,36 @@
 		.fa-clock-o{display: none;}
 	}
 	.jeg_post_excerpt{
-    font-size: 16px;
-    line-height: 1.5;
+	    font-size: 16px;
+	    line-height: 1.5;
 		color: $color-black;
-    p{color: $color-black;}
+    	p{color: $color-black;}
+	}
+}
+.entry-content{
+	.jeg_post_excerpt,
+	.content-inner{
+		p{
+			font-size: 1em;
+			color: $color-black;
+		}
+	}
+	.content-inner,
+	.wpb_text_column{
+		ul{
+			padding-left: 2.14285714em;
+			list-style-position: inside;
+			list-style: square;
+			margin-bottom: 1.5em;
+			ul{list-style: disc;}
+		}
+		ol{
+			padding-left: 2.14285714em;
+			list-style-position: inside;
+			list-style: decimal;
+			margin-bottom: 1.5em;
+			ol{list-style: lower-alpha;}
+		}
 	}
 }
 @media (max-width: 1024px){
