@@ -183,7 +183,7 @@ class Element_Userlist_View extends ModuleViewAbstract {
 			$content = $content . "<li>";
       $content = $content . "<div class='jeg_userlist-wrap'>";
       $content = $content . "<div class='jeg_userlist-title flex-wrap align-items-center col100'>";
-      $content = $content . "<div class='jeg_userlist-photo'><a href=\"" . get_bloginfo( 'url' ) . '/?author=' . $user->ID . '">' . get_avatar( $user->ID, 500 ) . "</a></div>";
+      $content = $content . "<div class='jeg_userlist-photo'><a href=\"" . get_author_posts_url( $user->ID ) . '">' . get_avatar( $user->ID, 500 ) . "</a></div>";
 
 			// ~ NAME
 			if ( get_user_meta( $user->ID, 'first_name', true ) || get_user_meta( $user->ID, 'last_name', true ) ) {
